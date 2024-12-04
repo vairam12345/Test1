@@ -1,0 +1,167 @@
+
+.hero-area,
+.hero-slides {
+  position: relative;
+  z-index: 6; 
+}
+
+.single-hero-slide
+ {
+  width: 100%; 
+  height: 15rem;
+  position: relative; 
+  padding: 0 30px;
+  overflow: hidden; 
+}
+
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-hero-slide {
+      height: 400px; 
+     
+    } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-slide {
+      height: 200px; 
+      
+    }      
+    }
+  @media only screen and (max-width: 767px) {
+    .single-hero-slide {
+      height: auto;
+     
+     }
+     }
+
+      @media only screen and (min-width: 1199px) {
+        .single-hero-slide 
+        {
+          height: 15rem; 
+                 } 
+        }
+  .single-hero-slide::after 
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.35); */
+    content: ''; 
+  }
+
+  .single-hero-slide .hero-slides-content 
+  {
+    display: inline-block;
+    width: 100%; 
+  }
+
+    .single-hero-slide .hero-slides-content h6 {
+      font-size: 1rem;
+      color: #fff;     
+      display: block; 
+    }
+      @media only screen and (max-width: 767px) 
+      {
+        .single-hero-slide .hero-slides-content h6 {
+         font-size: 14px;
+         }
+        }
+
+    .single-hero-slide .hero-slides-content h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 0;
+      font-weight: 600;
+      display: block;      
+      /* letter-spacing: 30px; */
+      overflow: hidden; }
+      .single-hero-slide .hero-slides-content h2 span {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        color: rgba(255, 255, 255, 0.15);
+        -webkit-animation: textsonar 6s linear infinite;
+        animation: textsonar 6s linear infinite; }
+
+      @media only screen and (min-width: 768px) and (max-width: 991px) 
+      {
+        .single-hero-slide .hero-slides-content h2 {         
+          font-size: 14px; } 
+        }
+      @media only screen and (max-width: 767px) 
+      {
+        .single-hero-slide .hero-slides-content h2 {
+         
+          font-size: 18px; } 
+        }
+   
+
+    
+
+@-webkit-keyframes textsonar {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(1.15);
+    transform: scaleX(1.15); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+@keyframes textsonar {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(1.15);
+    transform: scaleX(1.15); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+.single-hero-slide .slide-img {
+  -webkit-animation: slide 12s linear infinite;
+  animation: slide 12s linear infinite; }
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+/* :: 6.0 Buy Now Area CSS */
+.oneMusic-buy-now-area.has-fluid {
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+  z-index: 1; }
+
+
+
+
+
+
+
+
+
+
+
